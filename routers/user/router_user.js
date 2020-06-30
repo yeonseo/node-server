@@ -5,7 +5,7 @@ var path = require('path')
 //url routing
 router.get('/email', function(req, res, next) {
     console.log('email_post')
-    res.sendFile(path.join(__dirname, "../public/formEmail.html"))
+    res.sendFile(path.join(__dirname, "../../public/formEmail.html"))
 })
 
 router.post('/email_check', function(req, res) {
@@ -20,7 +20,6 @@ const connection = mysql.createConnection({
   host     : '192.168.0.20',
   port     : 3306,
   user     : 'root',
-  password : '',
   database : 'testdb_node'
 });
 connection.connect();
