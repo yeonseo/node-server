@@ -33,7 +33,6 @@ router.post('/', function(req, res) {
         // res.send("<h1>Hi! " + req.body.email + "</h1>")
         else res.render('welcome.ejs', {'id' : rows.insertId ,'email' : email})
     })
-    
 })
 
 module.exports = router;
